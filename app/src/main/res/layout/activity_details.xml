@@ -4,21 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-
-    >
-
-    <GridView
+    tools:context=".DetailsActivity">
+    <ImageView
+        android:id="@+id/Image_view_details"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:numColumns="2"
-        android:id="@+id/gride_view"
-        android:stretchMode="columnWidth"
-        android:drawSelectorOnTop="true">
-
-    </GridView>
-
-
-
+        android:layout_height="match_parent" />
 
 </LinearLayout>
