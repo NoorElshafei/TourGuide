@@ -9,6 +9,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class ImageAdapter extends BaseAdapter {
     private Context mContext;
     public Integer[] mThumbIds = {
@@ -24,6 +26,8 @@ public class ImageAdapter extends BaseAdapter {
             "Ain Sokhna","Sharm El-Sheikh",
             "Marsa Matruh","hurghada",
             "Luxor","Alexandria"};
+
+
 
     public ImageAdapter(Context mContext) {
         this.mContext = mContext;
