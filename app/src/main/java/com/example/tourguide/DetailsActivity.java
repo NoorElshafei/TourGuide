@@ -15,26 +15,21 @@ public class DetailsActivity extends AppCompatActivity {
     public int position;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
 
-
-        Intent intent=getIntent();
-        position=intent.getExtras().getInt("id");
+        Intent intent = getIntent();
+        position = intent.getExtras().getInt("id");
         //Log.i("DetailsActivity", "id= "+position);
-        TourGuideViewPagerAdapter tourGuideViewPagerAdapter=new TourGuideViewPagerAdapter(getSupportFragmentManager(),this);
-        ViewPager viewPager=findViewById(R.id.viewpager);
+        TourGuideViewPagerAdapter tourGuideViewPagerAdapter = new TourGuideViewPagerAdapter(getSupportFragmentManager(), this);
+        ViewPager viewPager = findViewById(R.id.viewpager);
         viewPager.setAdapter(tourGuideViewPagerAdapter);
 
         TabLayout tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
-
-
-
 
 
     }

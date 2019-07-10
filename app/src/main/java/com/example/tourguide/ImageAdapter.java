@@ -20,13 +20,12 @@ public class ImageAdapter extends BaseAdapter {
             R.drawable.matroh, R.drawable.hurghada,
             R.drawable.luxor, R.drawable.alex,
     };
-    public String [] mCities={
-            "Cairo","Giza",
-            "Dahb","Aswan",
-            "Ain Sokhna","Sharm El-Sheikh",
-            "Marsa Matruh","hurghada",
-            "Luxor","Alexandria"};
-
+    public String[] mCities = {
+            "Cairo", "Giza",
+            "Dahb", "Aswan",
+            "Ain Sokhna", "Sharm El-Sheikh",
+            "Marsa Matruh", "hurghada",
+            "Luxor", "Alexandria"};
 
 
     public ImageAdapter(Context mContext) {
@@ -51,15 +50,15 @@ public class ImageAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
 
-        View gridView=view;
+        View gridView = view;
         if (gridView == null) {
             gridView = LayoutInflater.from(mContext).inflate(
                     R.layout.content_item, viewGroup, false);
 
         }
 
-        ImageView imageView=gridView.findViewById(R.id.image_view);
-        TextView textView=gridView.findViewById(R.id.food_name);
+        ImageView imageView = gridView.findViewById(R.id.image_view);
+        TextView textView = gridView.findViewById(R.id.food_name);
         textView.setText(mCities[i]);
         imageView.setImageResource(mThumbIds[i]);
         return gridView;

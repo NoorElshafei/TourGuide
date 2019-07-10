@@ -30,9 +30,9 @@ public class TourGuideViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int i) {
         if (i == 0) {
             return new AttractionFragment();
-        } else if (i == 1){
+        } else if (i == 1) {
             return new PublicPlacesFragment();
-        } else  {
+        } else {
             return new RestaurantsFragment();
         }
 

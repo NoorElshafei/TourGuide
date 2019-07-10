@@ -21,7 +21,7 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  */
 public class AttractionFragment extends Fragment {
-        private int position;
+    private int position;
 
     public AttractionFragment() {
         // Required empty public constructor
@@ -31,21 +31,19 @@ public class AttractionFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView= inflater.inflate(R.layout.details_list,container,false);
+        View rootView = inflater.inflate(R.layout.details_list, container, false);
 
         final ArrayList<PlacesModel> placesModels;
 
-        Intent intent=getActivity().getIntent();
-         position=intent.getExtras().getInt("id");
-        //Log.i("CheckAttractionCities", "id= "+position);
-        CheckAttractionCities checkAttractionCities=new CheckAttractionCities();
-        placesModels=checkAttractionCities.checkCities(position);
+        Intent intent = getActivity().getIntent();
+        position = intent.getExtras().getInt("id");
 
-        final PlacesAdapterView placesAdapterView=new PlacesAdapterView(getActivity(),0,placesModels);
-        ListView listView =rootView.findViewById(R.id.list_view_details);
+        CheckAttractionCities checkAttractionCities = new CheckAttractionCities();
+        placesModels = checkAttractionCities.checkCities(position);
+
+        final PlacesAdapterView placesAdapterView = new PlacesAdapterView(getActivity(), 0, placesModels);
+        ListView listView = rootView.findViewById(R.id.list_view_details);
         listView.setAdapter(placesAdapterView);
-
-
 
 
         return rootView;

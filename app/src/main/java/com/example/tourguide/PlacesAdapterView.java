@@ -15,7 +15,7 @@ import android.widget.TextView;
 import java.util.List;
 
 public class PlacesAdapterView extends ArrayAdapter<PlacesModel> {
-    private  String currentMap;
+    private String currentMap;
 
     public String getCurrentMap() {
         return currentMap;
@@ -26,22 +26,21 @@ public class PlacesAdapterView extends ArrayAdapter<PlacesModel> {
     }
 
 
-
     @Override
-    public View getView(int position, View convertView,ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.details_item, parent, false);
         }
-        final PlacesModel currentModel=getItem(position);
-        TextView name=listItemView.findViewById(R.id.tour_text_view);
+        final PlacesModel currentModel = getItem(position);
+        TextView name = listItemView.findViewById(R.id.tour_text_view);
         name.setText(currentModel.getNameOfPlace());
-        TextView description=listItemView.findViewById(R.id.desc_text_view);
+        TextView description = listItemView.findViewById(R.id.desc_text_view);
         description.setText(currentModel.getDesc());
-        ImageView imageView=listItemView.findViewById(R.id.tour_image_view);
+        ImageView imageView = listItemView.findViewById(R.id.tour_image_view);
         imageView.setImageResource(currentModel.getImageResource());
-        ImageView imageView1=listItemView.findViewById(R.id.map_location);
+        ImageView imageView1 = listItemView.findViewById(R.id.map_location);
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,8 +56,6 @@ public class PlacesAdapterView extends ArrayAdapter<PlacesModel> {
                 }
             }
         });
-
-
 
 
         return listItemView;

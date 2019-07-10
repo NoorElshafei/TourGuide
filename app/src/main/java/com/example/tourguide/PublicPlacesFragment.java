@@ -29,19 +29,19 @@ public class PublicPlacesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView= inflater.inflate(R.layout.details_list,container,false);
+        View rootView = inflater.inflate(R.layout.details_list, container, false);
 
         ArrayList<PlacesModel> placesModels;
 
-       CheckPublicPlaceCities checkPublicPlaceCities=new CheckPublicPlaceCities();
+        CheckPublicPlaceCities checkPublicPlaceCities = new CheckPublicPlaceCities();
 
-        Intent intent=getActivity().getIntent();
-        int position=intent.getExtras().getInt("id");
-        Log.i("CheckPublicPlacesCities", "id= "+position);
-       placesModels=checkPublicPlaceCities.checkCities(position);
+        Intent intent = getActivity().getIntent();
+        int position = intent.getExtras().getInt("id");
+        Log.i("CheckPublicPlacesCities", "id= " + position);
+        placesModels = checkPublicPlaceCities.checkCities(position);
 
-         PlacesAdapterView placesAdapterView=new PlacesAdapterView(getActivity(),0,placesModels);
-        ListView listView =rootView.findViewById(R.id.list_view_details);
+        PlacesAdapterView placesAdapterView = new PlacesAdapterView(getActivity(), 0, placesModels);
+        ListView listView = rootView.findViewById(R.id.list_view_details);
         listView.setAdapter(placesAdapterView);
 
 

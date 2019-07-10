@@ -15,15 +15,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        GridView gridView=findViewById(R.id.gride_view);
-        ImageAdapter imageAdapter=new ImageAdapter(this);
+        GridView gridView = findViewById(R.id.gride_view);
+        ImageAdapter imageAdapter = new ImageAdapter(this);
         gridView.setAdapter(imageAdapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent =new Intent(MainActivity.this,DetailsActivity.class);
-                intent.putExtra("id",i);
+                Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+                intent.putExtra("id", i);
                 startActivity(intent);
 
             }

@@ -1,7 +1,7 @@
 package com.example.tourguide;
 
 public class PlacesModel {
-    private String nameOfPlace,desc,MapLocation;
+    private String nameOfPlace, desc, MapLocation;
     private int imageResource;
 
     public PlacesModel(String nameOfPlace, String desc, String mapLocation, int imageResource) {

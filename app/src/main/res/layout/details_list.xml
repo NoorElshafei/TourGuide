@@ -5,6 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/list_view_details"
-    android:drawSelectorOnTop="true">
+    >
 
 </ListView>

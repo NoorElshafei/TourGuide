@@ -27,18 +27,18 @@ public class RestaurantsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView= inflater.inflate(R.layout.details_list,container,false);
+        View rootView = inflater.inflate(R.layout.details_list, container, false);
 
         ArrayList<PlacesModel> placesModels;
-        CheckRestaurantsCities checkRestaurantsCities=new CheckRestaurantsCities();
+        CheckRestaurantsCities checkRestaurantsCities = new CheckRestaurantsCities();
 
-        Intent intent=getActivity().getIntent();
-        int position=intent.getExtras().getInt("id");
-        Log.i("CheckRestaurantsCities", "id= "+position);
-        placesModels=checkRestaurantsCities.checkCities(position);
+        Intent intent = getActivity().getIntent();
+        int position = intent.getExtras().getInt("id");
+        Log.i("CheckRestaurantsCities", "id= " + position);
+        placesModels = checkRestaurantsCities.checkCities(position);
 
-        PlacesAdapterView placesAdapterView=new PlacesAdapterView(getActivity(),0,placesModels);
-        ListView listView =rootView.findViewById(R.id.list_view_details);
+        PlacesAdapterView placesAdapterView = new PlacesAdapterView(getActivity(), 0, placesModels);
+        ListView listView = rootView.findViewById(R.id.list_view_details);
         listView.setAdapter(placesAdapterView);
 
         return rootView;
