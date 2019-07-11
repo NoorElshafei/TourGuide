@@ -10,7 +10,7 @@ public class CheckPublicPlaceCities{
     public ArrayList<PlacesModel> checkCities(int i) {
         ArrayList<PlacesModel> placesModels = new ArrayList<>();
 
-        if (i == 0) {
+        if (i == 0) {//Cairo
             placesModels.add(new PlacesModel("Steigenberger Hotel",
                     "Offering views of the Nile river, this modern hotel in downtown Cairo is a 5-minute walk from the Egyptian Museum, and a 6-minute walk from Sadat metro station and the landmark Tahrir Square.",
                     "geo:30.0424,31.1708?q=Steigenberger Hotel", R.drawable.steigenberger));
@@ -24,7 +24,7 @@ public class CheckPublicPlaceCities{
                     "Opposite the Nile River, this upscale hotel is 1 km from the Egyptian Museum of Antiquities and the Cairo Opera House.",
                     "geo:30.0458,31.2298?q=The Nile Ritz-Carlton", R.drawable.the_nile_ritz));
             return placesModels;
-        } else if (i == 1) {
+        } else if (i == 1) {//Giza
             placesModels.add(new PlacesModel("Giza Pyramids Inn",
                     "Located across the street from the Pyramids & the Great Sphinx Entrance Gate, Giza Pyramids Inn boasts air-conditioned rooms with free WiFi throughout the property. The hotel has a barbecue and sun terrace, and guests can enjoy a meal at the restaurant.",
                     "geo:29.9753,31.1393?q=Giza Pyramids Inn", R.drawable.giza_pyramids_inn));
@@ -39,7 +39,7 @@ public class CheckPublicPlaceCities{
                     "geo:29.9891,31.1280?q=Le Meridien Pyramids Hotel", R.drawable.le_meridien_pyramids_hotel));
 
             return placesModels;
-        } else if (i == 2) {
+        } else if (i == 2) {//Dahb
             placesModels.add(new PlacesModel("Monica Hotel",
                     "Providing free WiFi, a sun terrace with a swimming pool, garden and shared lounge, Monica Hotel is located in Dahab. Featuring room service, this property also provides guests with a barbecue. The accommodation provides a 24-hour front desk, a shared kitchen and luggage storage for guests.",
                     "geo:28.4939,34.5126?q=Monica Hotel", R.drawable.monica_hotel));
@@ -54,7 +54,7 @@ public class CheckPublicPlaceCities{
                     "geo:28.5046,34.5176?q=El Primo Hotel Dahab", R.drawable.primo_hotel_dahab));
 
             return placesModels;
-        } else if (i == 3) {
+        } else if (i == 3) {//Aswan
             placesModels.add(new PlacesModel("Sofitel Legend Old Cataract",
                     "Located in the Nubian Desert on the banks of the Nile, opposite Elephantine Island, Sofitel Legend Old Cataract offers elegant rooms and suites. It features outdoor and indoor pools.",
                     "geo:24.0822,32.8850?q=Sofitel Legend Old Cataract", R.drawable.sofitel_legend));
@@ -69,7 +69,7 @@ public class CheckPublicPlaceCities{
                     "geo:24.0889,32.8921?q=Philae Hotel Aswan", R.drawable.philae_hotel_aswan));
 
             return placesModels;
-        } else if (i == 4) {
+        } else if (i == 4) {//Ain sokhna
             placesModels.add(new PlacesModel("Romance Hotel",
                     "Situated on a private, Gulf of Suez beach, this 4-star hotel offers air-conditioned rooms with a balcony. Its outdoor pool is surrounded by cushioned loungers. Snorkelling is possible at the beach.",
                     "geo:29.2865,32.6011?q=Romance Hotel", R.drawable.romance_hotel));
@@ -83,7 +83,7 @@ public class CheckPublicPlaceCities{
                     "ew Horizon Elwadi Hotel features an outdoor swimming pool, garden, a bar and shared lounge in Ain Sokhna. Among the facilities of this property are a restaurant, a 24-hour front desk and room service, along with free WiFi. ",
                     "geo:29.6667,32.3545?q=New Horizon Elwadi Hotel", R.drawable.new_horizon_elwadi_hotel));
             return placesModels;
-        } else if (i == 5) {
+        } else if (i == 5) {//Sharm Elsheikh
             placesModels.add(new PlacesModel("Xperience Golden Sandy Beach",
                     "Situated in Sharm El Sheikh, Xperience Golden Sandy Beach has a private beach area and a garden. The property is set in Sharm El-Maia.",
                     "geo:27.8572,34.2891?q=Xperience Golden Sandy Beach", R.drawable.xperience_golden_sandy_beach));
@@ -98,7 +98,7 @@ public class CheckPublicPlaceCities{
                     "geo:27.9113,34.3222?q=Kahramana Hotel Naama Bay", R.drawable.kahramana_hotel_naama_bay));
 
             return placesModels;
-        } else if (i == 6) {
+        } else if (i == 6) {//Masrsa Matroh
             placesModels.add(new PlacesModel("Adriatica Hotel Marsa Matrouh",
                     "Offering a restaurant, Adriatica Hotel Marsa Matrouh is located in Marsa Matruh. Free WiFi access is available in public areas.",
                     "geo:31.3536,27.2323?q=Adriatica Hotel Marsa Matrouh", R.drawable.adriatica_hotel_marsa));
@@ -113,7 +113,7 @@ public class CheckPublicPlaceCities{
                     "geo:31.3714,27.1915?q=Las Vegas Marsa Matrouh", R.drawable.las_vegas));
 
             return placesModels;
-        } else if (i == 7) {
+        } else if (i == 7) {//hurghada
             placesModels.add(new PlacesModel("Sky View Suites Hotel",
                     "Sky View Suites Hotel has an outdoor swimming pool, garden, a bar and shared lounge in Hurghada. Among the facilities of this property are a restaurant, a 24-hour front desk and room service, along with free WiFi. All rooms include a balcony with pool views.",
                     "geo:27.2053,33.8437?q=Sky View Suites Hotel", R.drawable.sky_view));
@@ -128,7 +128,7 @@ public class CheckPublicPlaceCities{
                     "geo:27.0208,33.8890?q=Tropitel Sahl Hasheesh", R.drawable.tropitel_sahl));
 
             return placesModels;
-        } else if (i == 8) {
+        } else if (i == 8) {//luxor
             placesModels.add(new PlacesModel("Pavillon Winter Luxor",
                     "Pavillon Winter Luxor offers 3 restaurants, 2 bars, and warm hospitality in the heart of Luxor city. It overlooks the River Nile and is just 100 m away from the Luxor Temple.",
                     "geo:25.6967,32.6357?q=Pavillon Winter Luxor", R.drawable.pavillon_winter_luxor));
@@ -142,7 +142,7 @@ public class CheckPublicPlaceCities{
                     "Sofitel Winter Palace Luxor has a history of hosting royalty and celebrities throughout the years. The interior features grand staircases, high ceilings and lounge areas that are appointed with antique furniture and beautiful flower arrangements.",
                     "geo:25.6966,32.6349?q=Sofitel Winter Palace Luxor", R.drawable.sofitel_winter_palace_luxor));
             return placesModels;
-        } else {
+        } else {//Alex
             placesModels.add(new PlacesModel("Four Seasons Hotel",
                     "Set in an architectural landmark, Hotel San Stefano features a fashionable resort setting with a private sandy beach and overlooking the Mediterranean Sea. It boasts a full-service spa, outdoor pool and restaurants with terraces.",
                     "geo:31.2455,29.9645?q=Four Seasons Hotel Alexandria At San Stefano", R.drawable.four_seasons_hotel));
