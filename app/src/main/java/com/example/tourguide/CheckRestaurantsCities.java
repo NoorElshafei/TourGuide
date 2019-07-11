@@ -4,7 +4,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
-public class CheckRestaurantsCities extends DetailsActivity {
+public class CheckRestaurantsCities{
 
 
     public ArrayList<PlacesModel> checkCities(int i) {
